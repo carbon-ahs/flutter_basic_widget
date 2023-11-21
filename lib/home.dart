@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 import 'card1.dart';
+import 'card2.dart';
+import 'card3.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});
@@ -13,11 +15,17 @@ class _HomeState extends State<Home> {
   int _selectedIndex = 0;
   static List pages = [
     Container(
-      color: Colors.red,
+      color: const Color.fromARGB(255, 202, 225, 237),
       child: Card1(),
     ),
-    Container(color: Colors.green),
-    Container(color: Colors.blue),
+    Container(
+      color: Color.fromARGB(255, 109, 160, 187),
+      child: Card2(),
+    ),
+    Container(
+      color: Color.fromARGB(255, 202, 225, 237),
+      child: Card3(),
+    ),
   ];
 
   void _onItemTapped(int index) {
@@ -30,19 +38,21 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.blueGrey,
         title: Text(
           'Theme',
           style: Theme.of(context).textTheme.displayLarge,
         ),
       ),
       bottomNavigationBar: BottomNavigationBar(
-          selectedItemColor:
+          backgroundColor: Colors.blueGrey,
+          selectedItemColor: // Colors.white,
               Theme.of(context).textSelectionTheme.selectionColor,
           onTap: _onItemTapped,
           items: const [
             BottomNavigationBarItem(
               icon: Icon(Icons.card_giftcard),
-              label: 'Card',
+              label: 'Card1',
             ),
             BottomNavigationBarItem(
               icon: Icon(Icons.card_giftcard),

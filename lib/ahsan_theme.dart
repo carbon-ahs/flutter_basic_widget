@@ -62,7 +62,7 @@ class AhsanTheme {
         backgroundColor: Colors.black,
       ),
       bottomNavigationBarTheme: const BottomNavigationBarThemeData(
-        selectedItemColor: Colors.green,
+        selectedItemColor: Colors.white,
       ),
       textTheme: lightTextThemeAh,
     );
@@ -83,7 +83,7 @@ class AhsanTheme {
         backgroundColor: Colors.black,
       ),
       bottomNavigationBarTheme: const BottomNavigationBarThemeData(
-        selectedItemColor: Colors.green,
+        selectedItemColor: Colors.white,
       ),
       textTheme: lightTextThemeAh,
     );

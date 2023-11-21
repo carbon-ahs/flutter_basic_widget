@@ -20,7 +20,10 @@ class Card1 extends StatelessWidget {
         padding: const EdgeInsets.all(12.0),
         child: Container(
           margin: const EdgeInsets.all(12.0),
-          constraints: const BoxConstraints.expand(width: 350, height: 450),
+          constraints: const BoxConstraints.expand(
+            width: 350,
+            height: 450,
+          ),
           decoration: BoxDecoration(
             image: DecorationImage(
               image: AssetImage('assets/mag1.png'),
