@@ -32,25 +32,32 @@ class Card1 extends StatelessWidget {
           child: Stack(
             children: [
               Positioned(
+                top: 10,
+                left: 10,
                 child: Text(
                   catagory,
-                  style: AhsanTheme.darkTextThemeAh.displaySmall,
+                  style: AhsanTheme.darkTextThemeAh.bodyLarge,
                 ),
               ),
               Positioned(
-                top: 20,
+                top: 30,
+                left: 10,
                 child: Text(
                   title,
-                  style: AhsanTheme.darkTextThemeAh.displaySmall,
+                  style: AhsanTheme.darkTextThemeAh.displayLarge,
                 ),
               ),
               Positioned(
+                bottom: 30,
+                right: 10,
                 child: Text(
                   descreption,
                   style: AhsanTheme.darkTextThemeAh.displaySmall,
                 ),
               ),
               Positioned(
+                bottom: 10,
+                right: 10,
                 child: Text(
                   chef,
                   style: AhsanTheme.darkTextThemeAh.displaySmall,
